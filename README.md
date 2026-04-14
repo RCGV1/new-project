@@ -1,48 +1,33 @@
-# FieldHT App Store Screenshots
+# FieldHT
 
-This repository contains the FieldHT App Store screenshot generator and the exported screenshot sets prepared for App Store Connect.
+FieldHT is an iPhone app for controlling and configuring supported radios over Bluetooth.
 
-The generator lives in:
+The product focus includes:
+
+- live radio control
+- quick radio connection and reconnection
+- channel and memory group setup
+- programmable button and audio configuration
+- satellite pass tracking and radio plan visibility
+
+This repository currently contains FieldHT App Store marketing assets and the internal generator used to produce them.
+
+Included here:
+
+- exported App Store screenshots for current iPhone display classes
+- source screenshots captured from the app
+- a small Next.js composition tool used to generate the store images
+
+The internal asset generator lives in:
 
 - [appstore-screenshots](/Users/benjaminfaershtein/Documents/New%20project/appstore-screenshots)
 
-The exported PNG sets are organized by Apple display class:
-
-- [6.9" Display](/Users/benjaminfaershtein/Documents/New%20project/appstore-screenshots/exports/6.9%22%20Display)
-- [6.5" Display](/Users/benjaminfaershtein/Documents/New%20project/appstore-screenshots/exports/6.5%22%20Display)
-- [6.3" Display](/Users/benjaminfaershtein/Documents/New%20project/appstore-screenshots/exports/6.3%22%20Display)
-- [6.1" Display](/Users/benjaminfaershtein/Documents/New%20project/appstore-screenshots/exports/6.1%22%20Display)
-
-## What Is Included
-
-- custom Next.js screenshot composition app
-- source captures used in the layouts
-- finished App Store PNG exports
-- GPLv3 license
-
-## Generator
-
-Main implementation files:
-
-- [page.tsx](/Users/benjaminfaershtein/Documents/New%20project/appstore-screenshots/src/app/page.tsx)
-- [layout.tsx](/Users/benjaminfaershtein/Documents/New%20project/appstore-screenshots/src/app/layout.tsx)
-- [globals.css](/Users/benjaminfaershtein/Documents/New%20project/appstore-screenshots/src/app/globals.css)
-
-Run locally:
+If you need to regenerate the store assets:
 
 ```bash
 cd appstore-screenshots
 pnpm install
 pnpm dev
 ```
-
-Build locally:
-
-```bash
-cd appstore-screenshots
-pnpm build
-```
-
-## License
 
 This repository is licensed under GPLv3. See [LICENSE](/Users/benjaminfaershtein/Documents/New%20project/LICENSE).
