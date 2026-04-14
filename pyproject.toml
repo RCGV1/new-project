@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "astro25-decoder"
+version = "0.1.0"
+description = "Utilities for decoding Motorola Astro 25 codeplug (.cpg) files."
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.11"
+dependencies = [
+  "olefile>=0.47",
+]
+
+[project.scripts]
+astro25 = "astro25_decoder.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
